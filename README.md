@@ -20,7 +20,6 @@ This is the official place to report bugs, request new features, and track the d
 
 *   [FilmOptima Website](https://www.filmoptima.com)
 *   [Join the Early Access Program](https://www.filmoptima.com/eap)
-*   [EAP Terms and Conditions](https://www.filmoptima.com/eap-agreement)
 
 ---
 
