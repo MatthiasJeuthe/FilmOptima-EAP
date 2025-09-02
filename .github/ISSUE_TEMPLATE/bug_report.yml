@@ -1,0 +1,129 @@
+name: "🐛 Bug Report"
+description: "Report a bug or unexpected behavior to help us improve FilmOptima."
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! This information is crucial for helping us fix the issue.
+        **Please search the existing issues first to see if your bug has already been reported.**
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "When I perform action X, Y happens instead of Z."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "A step-by-step guide to make the bug happen. Be as specific as possible."
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What you expected to happen."
+      placeholder: "After clicking the button, the simulation should complete and show a results graph."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened. Include any error messages (even if they are in the console)."
+      placeholder: "The page freezes for 30 seconds and then displays an 'Unexpected Error' alert. The browser console shows a 500 error."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How severely does this bug impact your work?"
+      options:
+        - "Low (Minor UI glitch, typo)"
+        - "Medium (Inconvenient but has a workaround)"
+        - "High (Crashes, data loss, blocks key functionality)"
+        - "Critical (Cannot use the application at all)"
+    validations:
+      required: true
+
+  - type: input
+    id: filmoptima-version
+    attributes:
+      label: "FilmOptima Version"
+      description: "You can find this in the application's 'About' section or footer. (e.g., v0.5.1-EAP)"
+      placeholder: "e.g., v0.7.2-EAP"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "Your OS and version."
+      placeholder: "e.g., Windows 11 23H2, macOS Sonoma 14.4, Ubuntu 22.04 LTS"
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser (if web-based)"
+      description: "The browser and version you are using, if applicable."
+      placeholder: "e.g., Chrome 122, Firefox 115, Safari 17.3"
+    validations:
+      required: false
+
+  - type: input
+    id: gpu
+    attributes:
+      label: "GPU Model"
+      description: "Your graphics card model. This is critical for a GPGPU application like FilmOptima."
+      placeholder: "e.g., NVIDIA RTX 4090"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots/Recordings"
+      description: "If applicable, add screenshots or a screen recording to help explain your problem. You can drag and drop images here."
+      placeholder: "Drag & drop screenshots here or provide a link."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant Log Output"
+      description: |
+        **Please check for any error messages in the browser console (F12 -> Console tab) or application log file.**
+        Copy and paste any relevant text here. Omit any sensitive information.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Add any other context about the problem here. Does it happen every time? Did it start after a specific action?"
+      placeholder: "This started happening after I imported a specific material dataset..."
+    validations:
+      required: false
